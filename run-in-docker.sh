@@ -4,7 +4,6 @@ cd $(dirname $0)
 
 docker run --rm -it \
     --rm \
-    --network eagle \
     -p 8800:80  \
     -v `pwd`:/code -w /code \
     -e PYTHONDONTWRITEBYTECODE=1 \
